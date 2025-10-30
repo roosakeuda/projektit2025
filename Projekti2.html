@@ -11,19 +11,21 @@
          text-align: center;
          border-radius: 40%;
          margin: auto;
-    }
+        }
     </style>
+    <script src="Projekti2.js" charset="utf-8"></script>
+
 </head>
 <body>
     <section>
         <h3>Arvaa luku 1-10 väliltä</h3>
         <form onsubmit="return false">
-            <p>Arvaa <input type="number"> </p>
-            <button type="submit" onclick="arvoNumero" > Arpoo numeron</button>        
+            <p>Arvaa <input type="number" id="arvaus"> </p>
+            <button type="submit" onclick="arvoNumero()" > Arpoo numeron</button>        
         </form>
-        <p id="">Arvausten lukumäärä</p>
-        <p id="">Arvatut numerot</p>
-        <p id=""></p>
+        <p id="lukumaara">Arvausten lukumäärä</p>
+        <p id="arvatut">Arvatut numerot</p>
+        <p id="tulos"></p>
     </section>
 
 
