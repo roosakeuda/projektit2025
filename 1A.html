@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        h1 {
+            font-family: "Asimovian", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+        
+            
+        }
+
+
+        form {
+            border: 1px solid black;
+            width: 300px;
+            padding: 7px;
+            flex-direction: column;
+            background-color: rgb(247, 217, 222);
+                     
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[name="nimi"] {
+            background-color: rgb(253, 236, 239);
+        }
+        
+        input[type="button"], input[type="submit"] {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Kirjautumislomake</h1>
+        <label for="nimi">Nimi:</label> <br/>
+        <input type="text" name="nimi" id="nimi"> <br/>
+        <label for="ssana">Salasana: </label> <br/>
+        <input type="text" name="ssana" id="ssana"> <br/>
+        <label for="sala">Tätä tietoa ei näytetä käyttäjälle</label> <br/>
+        <input type="hidden"> <br/>
+        <label for="kone">Millainen koneen käyttäjä olet?</label> <br/>
+        <input type="radio" name="kone" id="kone-1">himopelaaja <br/>
+        <input type="radio" name="kone" id="kone-2">käytän opiskeluun <br/>
+        <input type="radio" name="kone" id="kone-3">en käytä konetta <br/>
+        <label for="mp">Mitä mieltä olet sivustani tähän asti</label><br/>
+        <input type="checkbox" name="mp" id="mp-1">Todella hienot <br/>
+        <input type="checkbox" name="mp" id="mp-2">Ammattimaisesti tehty <br/>
+        <input type="checkbox" name="mp" id="mp-3">Ostan sinulta! <br/>
+        <label for="lempiaine">Mikä on lempiaineesi Keudassa</label> <br/>
+        <select name="lempiaine" id="lempiaine"> <br/>
+            <option value="">--- Valitse lempiaine ---</option>
+            <option value="ammatti">Ammattiaineet</option>
+            <option value="ytot">Ytot</option>
+            <option value="valinnaiset">Valinnaiset</option>
+        </select> <br/>
+        <label for="Kehitys">Kerro, miten kehittäisit sivujani</label> <br/>
+        <textarea name="kehitys" id="Kehitys" cols="20" rows="10"></textarea> <br/>
+        <input type="button" value="Paina minua"> <br/>
+        <input type="submit">
+    </form>
+</body>
+</html>
