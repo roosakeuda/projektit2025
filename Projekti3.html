@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Laskin</title>
+  <link rel="stylesheet" href="Projekti3.css">
+  <script src="Projekti3.js" defer></script>
+</head>
+<body>
+  <div class="laskin">
+    <div class="naytto" id="naytto">0</div>
+    <div class="nappulat">
+      <button onclick="tyhjenna()">AC</button>
+      <button onclick="poista()">C</button>
+      <button onclick="lisaa('%')">%</button>
+      <button onclick="lisaa('/')">/</button>
+
+      <button onclick="lisaa('7')">7</button>
+      <button onclick="lisaa('8')">8</button>
+      <button onclick="lisaa('9')">9</button>
+      <button onclick="lisaa('*')">*</button>
+
+      <button onclick="lisaa('4')">4</button>
+      <button onclick="lisaa('5')">5</button>
+      <button onclick="lisaa('6')">6</button>
+      <button onclick="lisaa('-')">-</button>
+
+      <button onclick="lisaa('1')">1</button>
+      <button onclick="lisaa('2')">2</button>
+      <button onclick="lisaa('3')">3</button>
+      <button onclick="lisaa('+')">+</button>
+
+      <button onclick="lisaa('0')">0</button>
+      <button onclick="lisaa('.')">,</button>
+      <button class="wide" onclick="laske()">=</button>
+    </div>
+  </div>
+</body>
+</html>

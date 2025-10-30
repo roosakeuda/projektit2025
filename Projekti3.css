@@ -1,0 +1,56 @@
+body {
+  background-color: #d39870;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+#tulos {
+  text-align: left;
+  padding: 10px;
+  color: #000;
+  border-radius: 5px;
+  height: 60px;
+  line-height: 60px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(181, 192, 78);
+  color: rgb(253, 122, 0);
+  border: none; /* poistaa ns varjon nappulan ympäriltä*/
+  border-radius: 50%;
+  transition: background-color 0s; /* nappula vaihtaa väriä ja kuinka nopeasti */
+}
+
+.nappulat {
+  display: grid; /* Grid asettelu helpottaa elämää */
+  grid-template-columns: repeat(4, 60px); /* 4 nappulaa per rivi */
+  gap: 10px;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+button:active {
+  background-color: #f73e06; /* nappulan painaminen vaihtaa väriä */
+}
+
+.wide {
+  width: 60px;
+  border-radius: 5px;
+}
+
+#naytto {
+  width: 100%;
+  max-width: 260px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
