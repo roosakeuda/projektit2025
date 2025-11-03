@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(17, 168, 210);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: white;
+    font-weight: bolder;
+}
+
+#ohje1{
+    color: yellow;
+}
+
+#ohje2 {
+    color: green;
+}
+#ohje3 {
+    color: rgb(19, 123, 152)
+}
+#lisaa{
+    background-color: rgb(13, 93, 116);
+    color: rgb(17, 168, 210);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 7px;
+    border: none;
+}
+#lisaa:hover{
+    color: yellow;
+    transition-duration:  1s;
+     
+}
+
+#lisaaTehtava{
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    width: 400px;
+    outline: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li {
+    background-color: rgb(13, 93, 116);
+    color: rgb(17, 168, 210);
+    border: 2px solid #00707d;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+li:hover{
+    background-color: rgb(19, 118, 146);;
+}
+li.luokkaVarjaus{
+    background-color: rgb(44, 135, 38);
+    color: white;
+    transition-duration: 1s;
+}
+li.luokkaVarjaus:hover{
+    background-color: rgb(15, 160, 15);
+}
+li.luokkaPoistetut{
+    display: none;
+
+}
