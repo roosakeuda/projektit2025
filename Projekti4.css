@@ -34,7 +34,7 @@ h1{
      
 }
 
-#lisaaTehtava{
+#syotto{
     border: none;
     border-radius: 7px;
     padding: 5px;
@@ -72,3 +72,9 @@ li.luokkaPoistetut{
     display: none;
 
 }
+
+.valittu {
+    background-color: #d4edda; /* vaaleanvihreä taustaväri */
+    text-decoration: line-through; /* yliviivaus */
+    color: #155724; /* tummanvihreä teksti */
+  }
