@@ -95,6 +95,8 @@ function aloitaAjastin(){
 function peliLoppu(){
     clearInterval(ajastinID); // Lopetetaan ajastin ja syötetään lopputeksti
     document.getElementById("lopputulos").innerHTML = `Onneksi olkoon! Käytit ${klikkaukset} klikkausta ja aikaa ${aika} sekuntia.`
+    klikkaukset = 1
+    document.getElementById("tulos").innerHTML = ""
 }
 
 
