@@ -7,44 +7,25 @@
     <link rel="stylesheet" href="peli.css">
     <script src="Projekti5.js" ></script>
     <head>
-    <!-- <style>
-        #pelialue{
-            display: grid;
-            gap: 10px;
-            justify-content: center;
-            margin-top: 20px;
-            padding: 5px;
-        }
-        #pelialue div{
-            width: 60px;
-            height: 60px;
-            background-color: #eee;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            cursor: pointer;
-
-
-            
-        }
-
-        #pelialue div:hover{
-            transform: scale(1.05);
-            background-color: rgb(209, 208, 208);
-
-        }
-    </style> -->
-</head>
-<body>
-    <label for="pelikoko">Valitse pelikoko:</label>
-    <select id="pelikoko">
+        <header>
+            <h2>Muistipeli</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Aloitus</a></li>
+                    <li><a href="peli.html">Muistipeli</a></li>
+                </ul>
+            <label for="pelikoko">Valitse pelikoko:</label>
+            <select id="pelikoko">
         <option value="4x4">4x4</option>
         <option value="4x6">4x6</option>
         <option value="6x6">6x6</option>
-    </select>
+            </select>
+     <button type="button" onclick="aloitaPeli()">Uusi peli</button>
+        </nav>
+        </header>
+</head>
+<body>
     <p id="pelialue"></p>
-    <button type="button" onclick="aloitaPeli()">Uusi peli</button>
     <p id="tulos"></p>
     <p id="aika"></p>
     <p id="lopputulos"></p>
