@@ -57,10 +57,6 @@
       }
     });
 
-    // (Halutessasi voit esiladata muutaman esimerkkitehtävän)
-    // ["Tee läksyt", "Osta maitoa"].forEach(t => {
-    //   syotto.value = t; teeListaElementti();
-    // });
   });
 
 // var syotto = document.getElementById("syotto");
