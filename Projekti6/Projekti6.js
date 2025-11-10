@@ -21,6 +21,7 @@ function store() {
 
     window.localStorage.setItem(key, JSON.stringify(yhteystiedot));
     console.log("Yhteystiedot tallennettu avaimella: " + key);
+    naytaTallennetutTiedot();
 }
 
 function naytaTallennetutTiedot() {
