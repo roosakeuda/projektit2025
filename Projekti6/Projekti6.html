@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Projekti6.css">
+    <script src="Projekti6.js"></script>
 </head>
 <body>
     <h1>Yhteystiedot</h1>
@@ -12,28 +13,28 @@
         <legend>Yhteystietolomake</legend>
         <form id="lomake">
             <div class="lomakerivi">
-                <label for="etunimi">Etunimi<input type="text"></label> </br>
+                <label for="etunimi">Etunimi<input type="text" id="etunimi"></label> </br>
             </div>
             <div class="lomakerivi">
-                <label for="sukunimi">Sukunimi <input type="text"></label></br>
+                <label for="sukunimi">Sukunimi <input type="text" id="sukunimi"></label></br>
             </div>
             <div class="lomakerivi">
-                <label for="lahiosoite">Lähiosoite <input type="text"></label></br>
+                <label for="lahiosoite">Lähiosoite <input type="text" id="lahiosoite"></label></br>
             </div>
             <div class="lomakerivi">
-                <label for="postinumero">Postinumero <input type="text"></label></br>
+                <label for="postinumero">Postinumero <input type="text" id="postinumero"></label></br>
             </div>
             <div class="lomakerivi">
-                <label for="postitoimipaikka">Postitoimipaikka <input type="text"></label></br>
+                <label for="postitoimipaikka">Postitoimipaikka <input type="text" id="postitoimipaikka"></label></br>
             </div>
             <div class="lomakerivi">
-                <label for="puhelin">Puhelin <input type="tel"></label></br>
+                <label for="puhelin">Puhelin <input type="tel" id="puhelinnumero"></label></br>
             </div>
             <div class="lomakerivi">
-                <label for="sahkoposti">Sähköposti <input type="email"></label></br>
+                <label for="sahkoposti">Sähköposti <input type="email" id="sahkoposti"></label></br>
             </div>
-            <button type="submit">Tallenna tiedot</button>
-            <button type="button" id="tyhjenna">Tyhjennä tallennetut tiedot</button>
+            <button type="submit" id="Yhteystiedot">Tallenna tiedot</button>
+            <button type="button" id="removeItem">Tyhjennä tallennetut tiedot</button>
         </form>
     </fieldset> 
     <fieldset id="tulos">
