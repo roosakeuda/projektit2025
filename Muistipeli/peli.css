@@ -1,5 +1,11 @@
 body {
-    background-color: aqua;
+    animation: vaihdaTausta 20s infinite alternate ease-in-out; /* muista infinite jotta  */
+}
+
+@keyframes vaihdaTausta {
+    0% {background-color: rgb(26, 228, 228);}
+    50% {background-color: rgb(87, 175, 182);}
+    100% {background-color: rgb(17, 127, 201);}
 }
 
 header {
