@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Projekti6.css">
+    <script src="Projekti6.js"></script>
+</head>
+<body>
+    <h1>Yhteystiedot</h1>
+    <fieldset>
+        <legend>Yhteystietolomake</legend>
+        <form id="lomake">
+            <div class="lomakerivi">
+                <label for="etunimi">Etunimi<input type="text" id="etunimi"></label> </br>
+            </div>
+            <div class="lomakerivi">
+                <label for="sukunimi">Sukunimi <input type="text" id="sukunimi"></label></br>
+            </div>
+            <div class="lomakerivi">
+                <label for="lahiosoite">Lähiosoite <input type="text" id="lahiosoite"></label></br>
+            </div>
+            <div class="lomakerivi">
+                <label for="postinumero">Postinumero <input type="text" id="postinumero"></label></br>
+            </div>
+            <div class="lomakerivi">
+                <label for="postitoimipaikka">Postitoimipaikka <input type="text" id="postitoimipaikka"></label></br>
+            </div>
+            <div class="lomakerivi">
+                <label for="puhelin">Puhelin <input type="tel" id="puhelinnumero"></label></br>
+            </div>
+            <div class="lomakerivi">
+                <label for="sahkoposti">Sähköposti <input type="email" id="sahkoposti"></label></br>
+            </div>
+            <button type="submit" id="Yhteystiedot">Tallenna tiedot</button>
+            <button type="button" id="removeItem">Tyhjennä tallennetut tiedot</button>
+        </form>
+    </fieldset> 
+    <fieldset id="tulos">
+        <legend>Tallennetut tiedot</legend>
+        <p id="tulokset"></p>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{
+    color: white;
+    background-color: rgb(196, 206, 214);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+h1{
+    text-align: center;
+}
+
+fieldset{
+    max-width: 500px;
+    min-width: 400px;
+
+
+}
+legend{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+form{
+}
+.lomakerivi{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 5px;
+
+}
+label{
+    font-weight: bold;
+
+}
+input{
+    width: 200px;
+}
+
+button{
+    cursor: pointer;
+    padding: 3px;
+    margin: 5px;
+}
+
+
+#tulos{
+    min-height: 70px;
+}
