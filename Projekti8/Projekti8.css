@@ -1,0 +1,95 @@
+
+h1 {
+    text-align: center;
+}
+
+.laatikko{
+    width: 250px;
+    min-height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+}
+
+input{
+    border: none;
+    background-color: white;
+    color: rgb(156, 154, 154);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: grab;
+    margin: 5px, 0;
+    width: 60%;
+    text-align: center;
+    height: 15px;
+
+}
+
+button{
+    width: 30%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px, 0;
+    border: none;
+    background-color: rgb(235, 234, 234);
+    margin-bottom: 3px;
+}
+
+button:hover{
+    background-color: rgb(220, 220, 220);
+
+}
+.drop-targets{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.laatikko.drag-over{
+    border: 1px solid black;
+}
+
+
+.item{
+    background-color: white;
+    color: rgb(128, 128, 128);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: grab;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 90%;
+    text-align: center;
+    height: 15px;
+
+}
+.item.dragging{
+    transform: scale(1.05);
+    cursor: grabbing;
+    transition: transform 0.1s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#sprint{
+    background-color: pink;
+}
+
+#tyonalla{
+    background-color: lightsalmon;
+}
+
+#testaus{
+    background-color: lightblue;
+}
+
+#valmis{
+    background-color: lightgreen;
+}

@@ -1,0 +1,8 @@
+    setTimeout(() => {
+        e.target.classList.add('hide')
+
+    }, 0)
+
+        draggable.classList.remove('hide')
+
+

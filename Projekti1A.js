@@ -30,4 +30,4 @@ function tarkistaLomake(event) {
       alert("Lomake lähetetty onnistuneesti!");
       document.getElementById("lomake").submit(); // Lähetetään lomake
     }
-  }
+  } 
