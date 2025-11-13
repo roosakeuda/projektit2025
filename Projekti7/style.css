@@ -1,0 +1,41 @@
+body {
+  background-color: #fff8dc;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #5d3a00;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.animal {
+  margin-bottom: 40px;
+}
+
+#karhu {
+    border-color: green;
+}
+
+#joutsen {
+    border-color: #5d3a00;
+}
+
+.animal h2 {
+  font-size: 2em;
+  color: #8b4513;
+}
+
+img {
+  width: 300px;
+  border: 4px solid #deb887;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
