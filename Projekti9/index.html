@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nimipäiväsivu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Nimipäiväänsä viettävät</h1>
+
+  <div class="section">
+    <h2>Tänään</h2>
+    <p id="tanaan"></p>
+  </div>
+
+  <div class="section">
+    <h2>Huomenna</h2>
+    <p id="huomenna"></p>
+  </div>
+
+  <div class="section">
+    <h2>Eilen</h2>
+    <p id="eilen"></p>
+  </div>
+
+  <div class="section">
+    <h2>Anna päivä</h2>
+    <input type="date" id="paivaInput">
+    <button id="haePaiva">Hae nimipäivä</button>
+    <p id="paivaTulos"></p>
+  </div>
+
+  <div class="section">
+    <h2>Anna nimi</h2>
+    <input type="text" id="nimiInput" placeholder="Esim. Jalmari">
+    <button id="haeNimi">Hae nimipäivä</button>
+    <p id="nimiTulos"></p>
+  </div>
+
+  <script src="js/nimipaiva.js"></script>
+</body>
+</html>
