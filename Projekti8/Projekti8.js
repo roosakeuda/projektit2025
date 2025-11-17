@@ -15,22 +15,22 @@ laatikot.forEach(laatikko => {
     laatikko.addEventListener('drop', drop)
 });
 
-
+// nämä funktiot toteutuu, kun elementti tuodaan laatikon päälle
 function dragEnter(e){
-    e.preventDefault()
-    e.target.classList.add('drag-over')
+    e.preventDefault() 
+    e.target.classList.add('drag-over') // lisätään css luokka
 }
 function dragOver(e){
     e.preventDefault()
-    e.target.classList.add('drag-over')
+    e.target.classList.add('drag-over') // lisätään css luokka
 }
 
 function dragLeave(e){
-    e.target.classList.remove('drag-over')
+    e.target.classList.remove('drag-over') // kun elementti lähtee, otetaan css luokka pois
 }
 function drop(e){
     e.preventDefault()
-    e.target.classList.remove('drag-over')
+    e.target.classList.remove('drag-over') // kun elementti laitetaan laatikkoon, css luokka lähtee
 
     const id = e.dataTransfer.getData('text/plain')
     const draggable = document.getElementById(id)
@@ -40,31 +40,35 @@ function drop(e){
         : e.target.closest('.laatikko');
 
     if (targetBox){
-        targetBox.appendChild(draggable)
+        targetBox.appendChild(draggable) // siirretään elementti laatikkoon
     }
 
-    draggable.classList.remove('dragging')
+    draggable.classList.remove('dragging') // css luokka pois
 } 
 
 
 // tehtävien lisääminen
 const lisaaTehtava = document.getElementById('lisaaTehtava')
 const tehtavaTeksti = document.getElementById('tehtavaTeksti')
-let counter = 1 // jokaiselle oma id numero
+let counter = 1 // jokaiselle tehtävälle oma id numero
 
+
+//kun nappia painetaan
 lisaaTehtava.addEventListener('click', () => {
     const teksti = tehtavaTeksti.value.trim();
     if (teksti === '') return
 
+    // tehtävälle tehdään uusi div elementti
     const uusiItem = document.createElement('div')
     uusiItem.classList.add('item')
-    uusiItem.setAttribute('draggable', true)
-    uusiItem.id = `item-${counter++}`
+    uusiItem.setAttribute('draggable', true) 
+    uusiItem.id = `item-${counter++}` // annetaan oma id arvo
     uusiItem.textContent = teksti
 
-    uusiItem.addEventListener('dragstart', dragStart)
+    uusiItem.addEventListener('dragstart', dragStart) // uuteen tehtävään lisätään dragStart funktio
 
-    document.getElementById('sprint').appendChild(uusiItem)
+    document.getElementById('sprint').appendChild(uusiItem) // uusi elementti tulee "sprint" laatikkoon
+
     tehtavaTeksti.value = '' // tehtäväkenttäarvon tyhjennys
 })
 
