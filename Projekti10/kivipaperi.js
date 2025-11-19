@@ -45,17 +45,17 @@ function peli(tulos){ //kutsu tätä funktiota html elementtiä klikatessa, esim
         vastaus // Näyttää html tiedostossa voitto/häviötekstin kohtaan: id="tulos"
     document.getElementById("voitot").innerHTML = 
         `Käyttäjä: ${kauttaja} / Tietokone: ${tietokone}` //näyttää tulospisteen tekstin id="voitot" kohtaan
-        
-    // document.getElementById("kayttaja").textContent = 
-        // kauttaja 
-    // document.getElementById("tietokone").textContent = 
-        // tietokone
+
+    document.getElementById("kayttaja_pisteet").textContent = 
+        kauttaja 
+    document.getElementById("tietokoneen_pisteet").textContent = 
+        tietokone
 
     // tuossa erikseen kaksi lausetta, jotka laittavat id="kayttaja" sekä id="tietokone" kohtaan erikseen joko käyttäjän pisteet, tai koneen pisteet. Voi käyttää jos haluaa, esim jos tulosboksin tekeminen on niillä helpompi
 
     lista.forEach(valinta =>{
         let nappi = document.getElementById(valinta)
-        nappi.classList.remove("oikein", "vaarin")
+        nappi.classList.remove("oikein", "vaarin", "tasapeli")
     }); // otetaan valinnalta pois "oikein", ja "vaarin" css luokat
 
     let nappiPelaaja = document.getElementById(tulos)
@@ -70,5 +70,10 @@ function peli(tulos){ //kutsu tätä funktiota html elementtiä klikatessa, esim
         setTimeout(() => {
             nappiPelaaja.classList.remove("vaarin")
         }, 1500)
+    } else if(voittoHavio === 0){
+        nappiPelaaja.classList.add("tasapeli")
+        setTimeout(() =>{
+            nappiPelaaja.classList.remove("tasapeli")
+        },1500)
     }
 }

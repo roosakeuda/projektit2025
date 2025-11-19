@@ -63,16 +63,16 @@ body {
 
 /* Voitto/häviöefektit */
 .oikein {
-  background-color: #4CAF50; /* vihreä */
+  background-color: #4CAF50 !important; /* vihreä */
   color: white;
 }
 
 .vaarin {
-  background-color: #E53935; /* punainen */
+  background-color: #E53935 !important; /* punainen */ 
   color: white;
 }
 
 .tasapeli {
-  background-color: #FFEB3B; /* keltainen  tämä vielä kesken!*/
-  color: black;
+  background-color: #FFEB3B !important; /* keltainen  tämä vielä kesken!*/
+  color: white;
 }
