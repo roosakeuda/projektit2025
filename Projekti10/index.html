@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="tulostaulu">
+        <var id="kayttaja" class="pisteet"> Käyttäjä</var>
+        <var id="tietokone" class="pisteet">tietokone</var>
+        <span id="kayttaja_pisteet">0</span> : <span id="tietokoneen_pisteet">0</span>
+    </header>
+
+    <!-- tässä .js päivittää pelin tuloksen -->
+     <article id="tulos" class="vastaus">Valitse kivi, sakset tai paperi </article>
+     
+     <!-- tässä .js päivittää pelin pisteet -->
+      <section id="voitot" class="pisteet">Käyttäjä: 0 / Tietokone: 0</section>
+
+      <main class="valinnat">
+        <div id="kivi" class="valinta" onclick="peli('kivi')">Kivi</div>
+        <div id="sakset" class="valinta" onclick="peli('sakset')">Sakset</div>
+        <div id="paperi" class="valinta" onclick="peli('paperi')">Paperi</div>
+        <script src="kivipaperi.js"></script>
+      </main>
+</body>
+</html>
