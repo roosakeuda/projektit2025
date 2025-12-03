@@ -7,7 +7,7 @@ class Ball{
     }
 
     update(){
-        if (this.y < this.r || this.x > height - this.r){
+        if (this.y < this.r || this.y > height - this.r){
             this.ySpeed = -this.ySpeed
         }
 
