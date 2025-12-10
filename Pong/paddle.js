@@ -16,7 +16,7 @@ class Paddle {
 
     up(){
         if (this.y > 0){
-                this.y -= 2
+            this.y -= 2
         }
 
     }
@@ -33,11 +33,4 @@ class Paddle {
             this.down()
         }
     }
-
-    if (playerPaddle.isUp){
-        playerPaddle.up()
-    }else if (playerPaddle.isDown){
-        playerPaddle.down()
-    }
-
 }

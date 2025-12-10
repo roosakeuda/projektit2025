@@ -10,11 +10,12 @@ function setup(){
 }
 
 function draw(){
-    backround(0)
+    background(0)
 
     playerPaddle.display()
     aiPaddle.display()
 
+ 
     playerPaddle.update()
     aiPaddle.update()
 
@@ -27,8 +28,24 @@ function draw(){
     ball.hasHitAi(aiPaddle)
 
     stroke(255)
-    AudioListener(width/2, 0, width/2, height)
+    line(width/2, 0, width/2, height)
     
+}
+
+function keyPressed(){
+    if (keyCode == UP_ARROW){
+        playerPaddle.isUp = true;
+    }else if (keyCode == DOWN_ARROW){
+        playerPaddle.isDown = true
+    }
+}
+
+function keyReleased(){
+    if (keyCode == UP_ARROW){
+        playerPaddle.isUp = false
+    }else if (keyCode == DOWN_ARROW){
+        playerPaddle.isDown = false
+    }
 }
 
 function processAI(){
