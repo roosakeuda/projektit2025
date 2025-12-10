@@ -44,36 +44,35 @@
             margin: 5px;
         }
     </style>
-    <script src="Projekti1A.js"></script>
+    
 </head>
 <body>
-    <form>
+    <form id="lomake" onsubmit="tarkistaLomake(event)">
         <h1>Kirjautumislomake</h1>
         <label for="nimi">Nimi:</label> <br/>
         <input type="text" name="nimi" id="nimi"> <br/>
-        <label for="ssana">Salasana: </label> <br/>
-        <input type="text" name="ssana" id="ssana"> <br/>
-        <label for="sala">Tätä tietoa ei näytetä käyttäjälle</label> <br/>
-        <input type="hidden"> <br/>
+    
+        <label for="salasana">Salasana: </label> <br/>
+        <input type="text" name="salasana" id="salasana"> <br/>
+    
         <label for="kone">Millainen koneen käyttäjä olet?</label> <br/>
         <input type="radio" name="kone" id="kone-1">himopelaaja <br/>
         <input type="radio" name="kone" id="kone-2">käytän opiskeluun <br/>
         <input type="radio" name="kone" id="kone-3">en käytä konetta <br/>
-        <label for="mp">Mitä mieltä olet sivustani tähän asti</label><br/>
-        <input type="checkbox" name="mp" id="mp-1">Todella hienot <br/>
-        <input type="checkbox" name="mp" id="mp-2">Ammattimaisesti tehty <br/>
-        <input type="checkbox" name="mp" id="mp-3">Ostan sinulta! <br/>
+    
         <label for="lempiaine">Mikä on lempiaineesi Keudassa</label> <br/>
-        <select name="lempiaine" id="lempiaine"> <br/>
+        <select name="lempiaine" id="lempiaine">
             <option value="">--- Valitse lempiaine ---</option>
             <option value="ammatti">Ammattiaineet</option>
             <option value="ytot">Ytot</option>
             <option value="valinnaiset">Valinnaiset</option>
         </select> <br/>
+    
         <label for="Kehitys">Kerro, miten kehittäisit sivujani</label> <br/>
         <textarea name="kehitys" id="Kehitys" cols="20" rows="10"></textarea> <br/>
-        <input type="button" value="Paina minua"> <br/>
-        <input type="submit">
+    
+        <input type="submit" value="Lähetä">
     </form>
+    <script src="Projekti1A.js"></script>
 </body>
 </html>
